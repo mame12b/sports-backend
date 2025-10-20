@@ -8,6 +8,7 @@ import cors from "cors";
 import passport from "./config/passport.js";
 import authRoutes from "./routes/auth.routes.js";
 import logger from "./config/logger.js";
+import sportsRoutes from "./routes/sport.routes.js";
 
 
 
@@ -35,7 +36,7 @@ app.use(
 );
 
 // Initialize Passport
-// initializePassport(passport);
+
 app.use(passport.initialize());
 
 // protected route example
@@ -49,6 +50,7 @@ app.get(
 
 // mount routes
 app.use("/api/auth", authRoutes);
+app.use("/api/sports", sportsRoutes);
 
 // Routes
 app.get("/", (req, res) => res.send("✅ Sports backend is running..."));

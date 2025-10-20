@@ -1,10 +1,12 @@
 import jwt from 'jsonwebtoken';
-import User from '../models/user.model';
+import User from '../models/user.model.js';
 import logger from '../config/logger.js';
 
 export const verifyToken = async (req, res, next) => {
     try {
-    const authHeader = req.headers.authorization;
+        console.log("Auth header:", req.headers.authorization);
+        
+        const authHeader = req.headers.authorization;
     if (!authHeader || !authHeader.startsWith('Bearer ')) {
         return res.status(401).json({ message: 'No token provided' });
     }
@@ -21,7 +23,8 @@ export const verifyToken = async (req, res, next) => {
     next();
     } catch (error) {
     logger.error(`Token verification error: ${error.message}`);
-    return res.status(401).json({ message: 'Unauthorized' });
+    console.error(error); // 👈 Add this for live debugging
+    return res.status(401).json({ message: 'Unauthorized', error: error.message });
     }
 };
   

@@ -6,3 +6,26 @@
 [2025-10-19T13:14:30.924Z] info: New user registered: mame450@gmail.com
 [2025-10-19T13:42:12.359Z] info: User logged in: mame450@gmail.com
 [2025-10-19T13:53:18.485Z] info: New user registered: mame4500@gmail.com
+[2025-10-20T09:10:35.329Z] info: User logged in: mame450@gmail.com
+[2025-10-20T11:36:48.711Z] info: New user registered: admin1@gmail.com
+[2025-10-20T11:39:18.356Z] info: New user registered: admin2@gmail.com
+[2025-10-20T11:40:01.554Z] info: User logged in: admin2@gmail.com
+[2025-10-20T12:24:06.626Z] error: Token verification error: jwt malformed
+[2025-10-20T12:25:57.448Z] info: User logged in: admin2@gmail.com
+[2025-10-20T12:27:03.408Z] error: Token verification error: jwt must be provided
+[2025-10-20T12:45:42.494Z] info: New user registered: admin@test.com
+[2025-10-20T12:46:00.040Z] info: User logged in: admin@test.com
+[2025-10-20T12:53:25.007Z] error: Error creating sport: Cannot read properties of undefined (reading '_id')
+[2025-10-20T16:13:29.286Z] error: Error creating sport: Cannot read properties of undefined (reading '_id')
+[2025-10-20T16:17:05.927Z] error: Error creating sport: Cannot read properties of undefined (reading '_id')
+[2025-10-20T16:19:45.667Z] error: Token verification error: jwt must be provided
+[2025-10-20T16:25:27.727Z] info: User logged in: admin2@gmail.com
+[2025-10-20T16:27:36.133Z] error: Token verification error: jwt must be provided
+[2025-10-20T16:30:33.995Z] error: Token verification error: jwt must be provided
+[2025-10-20T16:33:35.725Z] error: Error creating sport: Sport validation failed: category: `Outdoor` is not a valid enum value for path `category`.
+[2025-10-20T16:34:07.515Z] info: New sport created: Football by admin admin2@gmail.com
+[2025-10-20T17:04:46.151Z] info: New sport created: Football by admin admin2@gmail.com
+[2025-10-20T17:07:58.417Z] error: Error updating sport: Plan executor error during findAndModify :: caused by :: E11000 duplicate key error collection: sports.sports index: name_1_category_1 dup key: { name: "Football", category: "dual" }
+[2025-10-20T17:17:58.522Z] info: New sport created: handball by admin admin2@gmail.com
+[2025-10-20T17:19:57.238Z] info: New sport created: criket by admin admin2@gmail.com
+[2025-10-20T17:24:08.317Z] error: Error selecting sports for user: Cannot populate path `selectedSports` because it is not in your schema. Set the `strictPopulate` option to false to override.
